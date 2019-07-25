@@ -1,8 +1,8 @@
-function Carro(velocidade = 200, delta = 5) {
+function Carro(velocidadeMaxima = 200, delta = 5) {
     // Atributo privado
     let velocidadeAtual = 0
 
-    // Metodo Privado
+    // Metodo Público
     this.acelerar = function () {
         if (velocidadeAtual + delta <= velocidadeMaxima) {
             velocidadeAtual += delta
@@ -10,7 +10,7 @@ function Carro(velocidade = 200, delta = 5) {
             velocidadeAtual = velocidadeMaxima
         }
     }
-    // Metodo Publico
+    // Metodo Público
     this.getVelocidadAtual = function () {
         return velocidadeAtual
     }
@@ -26,3 +26,6 @@ ferrari.acelerar()
 ferrari.acelerar()
 ferrari.acelerar()
 console.log(ferrari.getVelocidadAtual())
+
+console.log(typeof Carro)
+console.log(typeof ferrari)
