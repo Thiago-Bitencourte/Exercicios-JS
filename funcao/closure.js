@@ -12,3 +12,6 @@ function fora() {
     }
     return dentro
 }
+
+const minhaFuncao = fora ()
+console.log(minhaFuncao)
